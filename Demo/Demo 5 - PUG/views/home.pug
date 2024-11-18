@@ -1,0 +1,15 @@
+extends layout
+
+block main
+    .hero
+        h1= title
+        p.welcome= welcome
+    .features
+        .feature
+            h2 Users
+            p Users List
+            a.button(href='/users') See all users
+        .feature
+            h2 Articles
+            p Articles List
+            a.button(href='/articles') See all articles

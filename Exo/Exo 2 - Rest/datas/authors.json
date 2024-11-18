@@ -1,0 +1,27 @@
+[
+  {
+    "id": 101,
+    "name": "Maya Angelou",
+    "quote": "If you don't like something, change it. If you can't change it, change your attitude"
+  },
+  {
+    "id": 102,
+    "name":  "George Orwell",
+    "quote":  "In a time of deceit telling the truth is a revolutionary act"
+  },
+  {
+    "id": 103,
+    "name":  "Jane Austen",
+    "quote":  "There is no charm equal to tenderness of heart"
+  },
+  {
+    "id": 104,
+    "name": "Mark Twain",
+    "quote": "The secret of getting ahead is getting started"
+  },
+  {
+    "id": 105,
+    "name": "Albert Camus",
+    "quote": "In the depth of winter, I finally learned that there was in me an invincible summer"
+  }
+]

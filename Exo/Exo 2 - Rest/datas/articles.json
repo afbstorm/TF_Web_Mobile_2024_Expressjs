@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "The future of Artificial Intelligence",
+    "content": "Exploring the advancements and potential of AI technologies",
+    "authorId": 101,
+    "createdAt": "2024-11-15T114:00:00Z"
+  },
+  {
+    "id": 2,
+    "title": "Sustainable Living Tips",
+    "content": "Learn how to make your lifestyle more environmentally friendly",
+    "authorId": 102,
+    "createdAt": "2024-11-15T114:00:00Z"
+  },
+  {
+    "id": 3,
+    "title": "History of Charleroi",
+    "content": "A brief overview of the significant events in Charleroi's history",
+    "authorId": 102,
+    "createdAt": "2024-11-15T114:00:00Z"
+  },
+  {
+    "id": 4,
+    "title": "The Benefits of Mindfulness",
+    "content": "Understanding how mindfulness can improve your daily life",
+    "authorId": 104,
+    "createdAt": "2024-11-15T114:00:00Z"
+  },
+  {
+    "id": 5,
+    "title": "Templating",
+    "content": "Les joies de l'apprentissage de PUG, son icône c'est un petit chien trop mignon",
+    "authorId": 101,
+    "createdAt": "2024-11-18T10:17:11.210Z"
+  }
+]

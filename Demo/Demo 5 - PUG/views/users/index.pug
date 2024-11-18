@@ -1,0 +1,11 @@
+extends ../layout
+
+block main
+    h1= title
+    .grid
+        each user in users
+            .card
+                h2= user.name
+                p= user.email
+                a.button(href=`users/${user.id}`) User details
+
