@@ -5,13 +5,15 @@ const users = [
         id: 1,
         name: "Sarah Connor",
         email: "sarah@resistance.us",
-        bio: "La mère du sauveur de l'humanité"
+        bio: "La mère du sauveur de l'humanité",
+        avatar: "sarah.jpg"
     },
     {
         id: 2,
         name: "Paul Atreides",
         email: "paul@tamerofsandworms.planet",
-        bio: "Le sauveur de la planète avec les beaux yeux"
+        bio: "Le sauveur de la planète avec les beaux yeux",
+        avatar: "paul.webp"
     }
 ]
 

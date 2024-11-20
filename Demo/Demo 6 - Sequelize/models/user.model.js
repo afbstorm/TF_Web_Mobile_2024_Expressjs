@@ -64,7 +64,39 @@ module.exports = (sequelize, DataTypes) => {
                 }
             },
             timestamps: true // AJoute automatique les colonnes createdAt et updatedAt - L'option est présente en true par défaut
+        });
+
+    /**
+     * Définition des associations / relations du modèle User
+     * @param {Object} models - Tous les modèles de l'application
+     * One-to-Many (1:N) :
+     *
+     * Utilise hasMany d'un côté
+     * Utilise belongsTo de l'autre
+     * Crée une clé étrangère dans la table many
+     * Exemple : Un auteur a plusieurs articles
+     *
+     * Many-to-One (N:1) :
+     *
+     * C'est l'inverse du One-to-Many
+     * Même structure mais inversée
+     * Exemple : Plusieurs artiles appartiennent à l'auteur
+     *
+     * Many-to-Many (N:N) :
+     *
+     * Utilise belongsToMany des deux côtés
+     * Nécessite une table de jointure (through)
+     * Crée deux clés étrangères dans la table de jointure
+     * Exemple : Imaginons une table Category : Chaque article appartiendrait a une ou plusieurs catégories et chaque catégorie aurait un ou plusieurs articles
+     */
+
+    User.associate = (models) => {
+        // Un utilisateur peut avoir plusieurs articles
+        User.hasMany(models.Article, {
+            foreignKey: 'authorId', // Clé étrangère qui va être dans la table Article
+            as: 'articles' // Alias pour les requêtes
         })
+    }
 
     return User;
 }

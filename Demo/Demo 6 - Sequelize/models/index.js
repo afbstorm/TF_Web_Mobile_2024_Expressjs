@@ -31,6 +31,15 @@ fs.readdirSync(__dirname) // Lit tous les fichiers du répertoire
         db[model.name] = model;
     })
 
+// Une fois que les modèles sont lus / chargés, on configure les associations / relations
+Object.keys(db).forEach(model => {
+    // Pour chaque modèle, si une méthode " associate " existe
+    // on l'appelle en passant tous les modèles en paramètre
+    // Ca permet de définir / confirmer les relations entre les modèles
+    if (db[model].associate) {
+        db[model].associate(db)
+    }
+})
 
 // On ajoute l'instance de sequelize à l'object db
 // Permet d'accèder à sequelize depuis n'importe où en important db

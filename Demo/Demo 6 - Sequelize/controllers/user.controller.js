@@ -1,4 +1,4 @@
-const { User } = require('../models');
+const { User, Article } = require('../models');
 const { Op } = require('sequelize');
 
 const userController = {
@@ -64,7 +64,17 @@ const userController = {
             const user = await User.findByPk(id, {
                 attributes: {
                     exclude: ["password"]
-                }
+                },
+                include: [
+                    {
+                        model: Article,
+                        as: 'articles',
+                        where: {
+                            published: true
+                        },
+                        required: false // LEFT JOIN pour avoir l'utilisateur même sans articles
+                    }
+                ]
             });
 
             if (!user) {
